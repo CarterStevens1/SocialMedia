@@ -34,6 +34,7 @@ body {
 
 .follow {
   margin-top: -10px;
+  color: grey;
 }
 
 .darkMode {
@@ -41,6 +42,10 @@ body {
   align-items: center;
   margin-right: 12.5rem;
   margin-top: 30px;
+}
+
+.darkModeText {
+  color: grey;
 }
 
 .toggle-container {
@@ -244,4 +249,17 @@ p.BoldNumber {
   color: rgb(83, 83, 83);
   font-size: 0.82rem;
   font-weight: bold;
+}
+
+.dark {
+  background-color: #040408;
+  color: #fff;
+}
+
+.darktopBar {
+  background: #080813;
+}
+
+.darkBox {
+  background: #080813;
 }
