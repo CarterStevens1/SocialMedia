@@ -251,6 +251,7 @@ p.BoldNumber {
   font-weight: bold;
 }
 
+/* Dark mode Section */
 .dark {
   background-color: #040408;
   color: #fff;
