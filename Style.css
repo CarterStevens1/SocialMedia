@@ -257,7 +257,7 @@ p.BoldNumber {
   color: #fff;
 }
 
-.darktopBar {
+.darktopBar::after {
   background: #080813;
 }
 
