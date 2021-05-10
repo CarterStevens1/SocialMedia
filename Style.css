@@ -141,22 +141,18 @@ input:checked + .slider:before {
 
 .box.one {
   border-top: 4px solid dodgerblue;
-  border-radius: 3px;
 }
 
 .box.two {
   border-top: 4px solid rgb(54, 151, 248);
-  border-radius: 3px;
 }
 
 .box.three {
   border-top: 4px solid orangered;
-  border-radius: 3px;
 }
 
 .box.four {
   border-top: 4px solid rgb(250, 2, 2);
-  border-radius: 3px;
 }
 
 p.logoTag {
@@ -186,15 +182,11 @@ p.BoldNumber {
   margin-top: 15px;
   align-items: center;
   display: inline-flex;
+  margin-bottom: 20px;
 }
 
-.highlightRed {
+.Red {
   color: rgb(220 65 76);
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-top: 15px;
-  align-items: center;
-  display: inline-flex;
 }
 
 .iconLogo {
@@ -258,16 +250,20 @@ p.BoldNumber {
 
 /* Dark mode Section */
 .dark {
-  background-color: #040408;
+  background-color: #1e202a;
   color: #fff;
 }
 
 .darktopBar::after {
-  background: #080813;
+  background: #1f212e;
 }
 
 .darkBox {
-  background: #080813;
+  background: #252a41;
+}
+
+.darkHover:hover {
+  background-color: #292f47;
 }
 
 /* Media Queries */
@@ -294,7 +290,7 @@ p.BoldNumber {
   .topBox,
   .botBox {
     margin-bottom: 20px;
-    width: 20rem;
+    width: 32rem;
   }
   .topRow,
   .bottomRow {
@@ -319,14 +315,16 @@ p.BoldNumber {
   .topBar {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+  }
+
+  .darkMode {
+    margin: 0;
   }
 }
 
 @media (max-width: 1050px) and (min-width: 700px) {
   .contentWrapper {
-    width: 900px;
+    width: 700px;
   }
   .containerTop {
     display: flex;
@@ -361,7 +359,7 @@ p.BoldNumber {
 
   .topBar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     align-items: center;
   }
