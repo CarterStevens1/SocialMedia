@@ -320,10 +320,7 @@ p.BoldNumber {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-
-  .darkMode {
-    margin-left: 12.5rem;
+    align-items: center;
   }
 }
 
