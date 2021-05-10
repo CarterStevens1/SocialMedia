@@ -10,6 +10,11 @@ body {
   margin: 0;
 }
 
+.contentWrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .topBar {
   display: flex;
   justify-content: space-between;
@@ -21,13 +26,13 @@ body {
   position: absolute;
   width: 100vw;
   height: 30vh;
-  background: #ececec;
+  background: #f0f2fa;
   z-index: -1;
+  left: 0;
 }
 
 .leftText,
 .sub-title {
-  margin-left: 12.5rem;
   margin-top: 30px;
 }
 
@@ -39,7 +44,7 @@ body {
 .darkMode {
   display: flex;
   align-items: center;
-  margin-right: 12.5rem;
+
   margin-top: 30px;
 }
 
@@ -96,11 +101,7 @@ body {
   color: #fff;
 }
 input:checked + .slider {
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 98, 209),
-    rgb(20, 196, 20)
-  );
+  background: linear-gradient(to right, #378fe6, #3eda82);
 }
 
 input:checked + .slider:before {
@@ -124,16 +125,18 @@ input:checked + .slider:before {
   text-align: center;
   width: 250px;
   min-width: 230px;
-  background-color: #e8e7e7;
+  background-color: #f0f2fa;
   margin-right: 20px;
   margin-left: 20px;
+  border-radius: 6px;
 }
 
 .box:hover,
 .botBox:hover,
 .topBox:hover {
-  background: lightgray;
+  background-color: #e0e5f0;
   cursor: pointer;
+  transition: all 0.5s ease 0.0833333s;
 }
 
 .box.one {
@@ -209,9 +212,10 @@ p.BoldNumber {
   text-align: center;
   width: 250px;
   min-width: 230px;
-  background-color: #e8e7e7;
+  background-color: #f0f2fa;
   margin-right: 20px;
   margin-left: 20px;
+  border-radius: 6px;
 }
 
 .bottomRow {
@@ -277,6 +281,10 @@ p.BoldNumber {
 }
 
 @media (max-width: 700px) {
+  .contentWrapper {
+    width: 500px;
+  }
+
   .containerTop {
     display: flex;
     flex-direction: column;
@@ -319,6 +327,9 @@ p.BoldNumber {
 }
 
 @media (max-width: 1050px) and (min-width: 700px) {
+  .contentWrapper {
+    width: 900px;
+  }
   .containerTop {
     display: flex;
     flex-direction: column;
