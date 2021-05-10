@@ -7,7 +7,6 @@
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
 }
 
@@ -124,6 +123,7 @@ input:checked + .slider:before {
 .box {
   text-align: center;
   width: 250px;
+  min-width: 230px;
   background-color: #e8e7e7;
   margin-right: 20px;
   margin-left: 20px;
@@ -208,6 +208,7 @@ p.BoldNumber {
 .botBox {
   text-align: center;
   width: 250px;
+  min-width: 230px;
   background-color: #e8e7e7;
   margin-right: 20px;
   margin-left: 20px;
@@ -263,4 +264,90 @@ p.BoldNumber {
 
 .darkBox {
   background: #080813;
+}
+
+/* Media Queries */
+.MediaFirst2,
+.MediaSecond2,
+.topBoxMedia1,
+.topBoxMedia2,
+.botBoxMedia1,
+.botBoxMedia2 {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .containerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box,
+  .topBox,
+  .botBox {
+    margin-bottom: 20px;
+    width: 20rem;
+  }
+  .topRow,
+  .bottomRow {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  .MediaFirst2,
+  .MediaSecond2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .darkMode {
+    margin-left: 12.5rem;
+  }
+}
+
+@media (max-width: 1050px) and (min-width: 700px) {
+  .containerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topRow,
+  .bottomRow {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  .box,
+  .topBox,
+  .botBox {
+    width: 20rem;
+  }
+
+  .MediaFirst2,
+  .MediaSecond2 {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .topBoxMedia1,
+  .topBoxMedia2,
+  .botBoxMedia1,
+  .botBoxMedia2 {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .topBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .darkMode {
+    margin-left: 12.5rem;
+  }
 }
