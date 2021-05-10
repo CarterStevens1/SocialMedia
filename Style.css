@@ -319,6 +319,7 @@ p.BoldNumber {
   .topBar {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .darkMode {
@@ -364,9 +365,7 @@ p.BoldNumber {
   .topBar {
     display: flex;
     flex-direction: column;
-  }
-
-  .darkMode {
-    margin-left: 12.5rem;
+    text-align: center;
+    align-items: center;
   }
 }
