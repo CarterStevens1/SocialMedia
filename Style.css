@@ -318,7 +318,15 @@ p.BoldNumber {
   }
 
   .darkMode {
-    margin: 0;
+    margin: 0 auto;
+  }
+
+  .leftText {
+    margin: 0 auto;
+  }
+
+  .follow {
+    text-align: center;
   }
 }
 
@@ -360,7 +368,7 @@ p.BoldNumber {
   .topBar {
     display: flex;
     flex-direction: row;
-    text-align: center;
+
     align-items: center;
   }
 }
